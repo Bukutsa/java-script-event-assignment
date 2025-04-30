@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dar Chef Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Dar Chef</h1>
+    <p>Experience the finest dining in Morroco</p>
+  </header>
+
+  <section class="slideshow">
+    <img id="gallery" src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg" alt="Restaurant Image" width="600">
+    <button onclick="nextImage()">Next</button>
+  </section>
+
+  
+  <section>
+    <button id="clickBtn">Reserve a Table</button>
+  </section>
+
+ 
+  <section class="tabs">
+    <div class="tab" onclick="toggleTab('menu')">Menu</div>
+    <div id="menu" class="content">
+      <p>Explore our exquisite dishes crafted with passion.</p>
+    </div>
+  </section>
+
+  <!-- Reservation Form -->
+  <section>
+    <form id="reservationForm">
+      <input type="text" id="name" required placeholder="Your Name">
+      <input type="email" id="email" required placeholder="Your Email">
+      <input type="password" id="password" required placeholder="Create Password">
+      <button type="submit">Book Now</button>
+    </form>
+    <div id="feedback"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
